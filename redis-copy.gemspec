@@ -6,7 +6,7 @@ require 'redis-copy/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'redis-copy'
-  spec.version       = RedisCopy::VERSION
+  spec.version       = '1.0.1'
 
   authors_and_emails = (`git shortlog -sne`).lines.map do |l|
     (/(?<=\t)(.+) <(.+)>\z/).match(l.chomp).to_a.last(2)
