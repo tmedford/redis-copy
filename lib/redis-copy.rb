@@ -88,8 +88,9 @@ module RedisCopy
 
     def redis_from(connection_string)
       require 'uri'
-      
-      Redis.new({url: connection_string}).tap(&:ping)
+        
+      puts '7777'
+       Redis.new({url: connection_string}).tap(&:ping)
     rescue Redis::CommandError => e
       fail(Redis::CommandError,
            "There was a problem connecting to #{uri.to_s}\n#{e.message}")
